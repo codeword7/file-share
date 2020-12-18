@@ -7,7 +7,7 @@ const connectDB = require('./config/db');
 connectDB();
 
 //ROUTES
-app.use('/api/files', require('./config/db'))
+app.use('/api/files', require('./routes/files'))
 
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`)
