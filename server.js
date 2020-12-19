@@ -3,6 +3,7 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 const path = require('path')
+app.use(express.json())
 const connectDB = require('./config/db');
 connectDB();
 
